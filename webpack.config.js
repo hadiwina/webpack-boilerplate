@@ -21,7 +21,7 @@ module.exports = {
    plugins: [
       new HtmlWebPackPlugin({
           title: 'App Boilerplate',
-          template: 'index.hbs'
+          template: './templates/index.hbs'
       })
    ]
 };
