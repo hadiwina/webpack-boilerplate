@@ -6,7 +6,8 @@ module.exports = {
    entry: './src/index.js',
    module: {
       rules: [
-        { test: /\.hbs$/, loader: "handlebars-loader" }
+        { test: /\.hbs$/, loader: "handlebars-loader" },
+        { test: /\.css$/i, use: ["style-loader", "css-loader"] }
       ]
     },
    output: {
